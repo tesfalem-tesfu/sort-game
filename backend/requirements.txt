@@ -5,3 +5,4 @@ flask-jwt-extended==4.6.0
 werkzeug==3.0.4
 gunicorn
 flask_limiter
+dotenv
