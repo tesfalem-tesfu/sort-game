@@ -7,6 +7,7 @@ gunicorn
 flask_limiter
 python-dotenv
 pymysql
+psycopg2-binary
 cryptography
 bleach
 flask-talisman
