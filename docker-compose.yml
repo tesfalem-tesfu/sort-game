@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  # MySQL Database
+  db:
+    image: mysql:8.0
+    container_name: sorting_quiz_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: sorting_quiz
+      MYSQL_USER: sorting_user
+      MYSQL_PASSWORD: secure_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/update_db.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - sorting_network
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sorting_quiz_backend
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: sorting_user
+      MYSQL_PASSWORD: secure_password
+      MYSQL_DB: sorting_quiz
+      JWT_SECRET_KEY: your-super-secret-jwt-key-256-bits-minimum
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - sorting_network
+    volumes:
+      - ./backend:/app
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: sorting_quiz_frontend
+    restart: unless-stopped
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:5000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - sorting_network
+    volumes:
+      - ./frontend:/app
+
+  # Nginx Reverse Proxy (Optional)
+  nginx:
+    image: nginx:alpine
+    container_name: sorting_quiz_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - sorting_network
+
+volumes:
+  mysql_data:
+
+networks:
+  sorting_network:
+    driver: bridge

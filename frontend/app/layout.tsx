@@ -1,16 +1,17 @@
 // app/layout.tsx
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
-// Theme support
 import { ThemeProvider } from "next-themes";
+import Particles from "../components/Particles";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -77,12 +78,10 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${inter.variable} font-sans antialiased min-vh-100 d-flex flex-column bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950 text-white`}
-        style={{
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-        }}
+        className={`${poppins.variable} font-sans antialiased min-vh-100 d-flex flex-column text-white animated-bg`}
+        style={{ backgroundAttachment: "fixed" }}
       >
+        <Particles />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -90,7 +89,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* Navbar */}
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-80 shadow-sm sticky-top">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-80 shadow-sm sticky-top page-content">
             <div className="container">
               <a className="navbar-brand fw-bold fs-4" href="/">
                 Sorting Quiz
@@ -127,12 +126,12 @@ export default function RootLayout({
           </nav>
 
           {/* Main content */}
-          <main className="flex-grow-1 container py-4 py-md-5">
+          <main className="flex-grow-1 container py-4 py-md-5 page-content">
             {children}
           </main>
 
           {/* Footer */}
-          <footer className="py-4 text-center text-white-50 small bg-dark bg-opacity-60 mt-auto">
+          <footer className="py-4 text-center text-white-50 small bg-dark bg-opacity-60 mt-auto page-content">
             <div className="container">
               <p className="mb-1">
                 © {new Date().getFullYear()} Sorting Quiz Game

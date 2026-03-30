@@ -2,41 +2,51 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";  // ← Added this!
+import Link from "next/link";
+
+const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000";
 
 export default function Login() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+    setLoading(true);
 
-    const savedEmail = localStorage.getItem("userEmail");
-    const savedPassword = localStorage.getItem("userPassword");
+    try {
+      const res = await fetch(`${API}/api/login`, {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
 
-    if (email === savedEmail && password === savedPassword) {
-      localStorage.setItem("isLoggedIn", "true");
-      router.push("/game");
-    } else {
-      setError("Invalid email or password");
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.msg || "Login failed");
+        return;
+      }
+      // Store JWT token
+      localStorage.setItem("token", data.access_token);
+      localStorage.setItem("userEmail", data.email);
+
+      router.push("/select");
+    } catch {
+      setError("Cannot connect to server. Is the backend running?");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div className="min-vh-100 d-flex align-items-center justify-content-center bg-gradient-to-br from-blue-950 via-indigo-950 to-cyan-950 text-white">
-      <div 
-        className="glass-card p-5 p-md-5 rounded-4 shadow-2xl position-relative overflow-hidden"
-        style={{ 
-          maxWidth: "480px", 
-          width: "90%",
-          background: "rgba(30, 40, 70, 0.45)",
-          backdropFilter: "blur(16px)",
-          border: "1px solid rgba(100, 150, 255, 0.25)",
-        }}
-      >
+    <div className="min-vh-100 d-flex align-items-center justify-content-center text-white page-content">
+      <div className="glass-card p-5" style={{ maxWidth: "480px", width: "90%" }}>
         <h2 className="text-center fw-bold mb-5 fs-2 text-gradient">
           Welcome Back
         </h2>
@@ -45,7 +55,7 @@ export default function Login() {
           <div className="form-floating">
             <input
               type="email"
-              className="form-control bg-white/5 border-white/20 text-white shadow-sm"
+              className="form-control"
               id="email"
               placeholder="you@example.com"
               value={email}
@@ -53,82 +63,46 @@ export default function Login() {
               required
               autoFocus
             />
-            <label htmlFor="email" className="text-white-75">Email address</label>
+            <label htmlFor="email">Email address</label>
           </div>
 
           <div className="form-floating">
             <input
               type="password"
-              className="form-control bg-white/5 border-white/20 text-white shadow-sm"
+              className="form-control"
               id="password"
-              placeholder="Enter your password"
+              placeholder="Your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <label htmlFor="password" className="text-white-75">Password</label>
+            <label htmlFor="password">Password</label>
           </div>
 
           {error && <div className="alert alert-danger text-center py-2 mb-0">{error}</div>}
 
-          <button 
-            type="submit" 
-            className="btn btn-gradient btn-lg w-100 rounded-pill shadow-lg mt-2 py-3 fw-bold"
+          <button
+            type="submit"
+            className="btn btn-gradient btn-lg w-100 rounded-pill mt-2 py-3 fw-bold"
+            disabled={loading}
           >
-            Login to Sorting Quest
+            {loading ? "Logging in..." : "Login to Sorting Quest"}
           </button>
+
+          <div className="text-center mt-3">
+            <Link href="/reset-password" className="text-info text-decoration-none">
+              Forgot your password?
+            </Link>
+          </div>
         </form>
 
-        <p className="mt-4 text-center text-white-75">
-          Don't have an account?{" "}
-          <Link href="/register" className="text-info fw-semibold text-decoration-underline">
+        <p className="mt-4 text-center text-white-50">
+          Don&apos;t have an account?{" "}
+          <Link href="/register" className="text-info fw-semibold">
             Register now
           </Link>
         </p>
       </div>
-
-      <style jsx global>{`
-        .text-gradient {
-          background: linear-gradient(90deg, #60a5fa, #a5b4fc, #c084fc);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        .btn-gradient {
-          background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
-          border: none;
-          transition: all 0.3s ease;
-        }
-        .btn-gradient:hover {
-          background: linear-gradient(135deg, #2563eb, #4f46e5, #7c3aed);
-          transform: translateY(-3px);
-          box-shadow: 0 15px 30px rgba(59, 130, 246, 0.4);
-        }
-        .glass-card {
-          transition: all 0.4s ease;
-        }
-        .glass-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-        }
-        .form-control {
-          background: rgba(255,255,255,0.08) !important;
-          border: 1px solid rgba(255,255,255,0.18) !important;
-          color: white !important;
-          transition: all 0.3s;
-        }
-        .form-control:focus {
-          background: rgba(255,255,255,0.12) !important;
-          border-color: #60a5fa !important;
-          box-shadow: 0 0 0 0.25rem rgba(96, 165, 250, 0.25) !important;
-        }
-        .form-floating > label {
-          color: rgba(255,255,255,0.75) !important;
-        }
-        .form-floating > .form-control:focus ~ label,
-        .form-floating > .form-control:not(:placeholder-shown) ~ label {
-          color: #60a5fa !important;
-        }
-      `}</style>
     </div>
   );
 }

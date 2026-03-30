@@ -1,0 +1,380 @@
+2026-03-25 15:54:57,559 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.104:5000
+2026-03-25 15:54:57,561 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-25 15:54:57,566 [INFO]  * Restarting with stat
+2026-03-25 15:55:01,544 [WARNING]  * Debugger is active!
+2026-03-25 15:55:01,554 [INFO]  * Debugger PIN: 246-401-570
+2026-03-25 15:58:25,440 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.104:5000
+2026-03-25 15:58:25,443 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-25 15:58:25,447 [INFO]  * Restarting with stat
+2026-03-25 15:58:28,421 [WARNING]  * Debugger is active!
+2026-03-25 15:58:28,435 [INFO]  * Debugger PIN: 246-401-570
+2026-03-25 15:58:35,414 [INFO] 127.0.0.1 - - [25/Mar/2026 15:58:35] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-25 15:58:35,839 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-25 15:58:35,844 [INFO] 127.0.0.1 - - [25/Mar/2026 15:58:35] "POST /api/login HTTP/1.1" 200 -
+2026-03-25 15:58:57,194 [INFO] 127.0.0.1 - - [25/Mar/2026 15:58:57] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:58:57,431 [INFO] 127.0.0.1 - - [25/Mar/2026 15:58:57] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:02,976 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:02] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:03,030 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:03] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:03,615 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:03] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:04,619 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:04] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:05,401 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:05] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:06,125 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:06] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:06,859 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:06] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:07,539 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:07] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:08,250 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:08] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:08,265 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:08] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:08,938 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:08] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:09,573 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:09] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:10,237 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:10] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:10,836 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:10] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:11,452 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:11] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:11,949 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:11] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-25 15:59:12,510 [INFO] 127.0.0.1 - - [25/Mar/2026 15:59:12] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-29 05:51:29,918 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.249.200.190:5000
+2026-03-29 05:51:29,921 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-29 05:51:29,928 [INFO]  * Restarting with stat
+2026-03-29 05:51:32,364 [WARNING]  * Debugger is active!
+2026-03-29 05:51:32,377 [INFO]  * Debugger PIN: 246-401-570
+2026-03-29 05:52:35,061 [INFO] 127.0.0.1 - - [29/Mar/2026 05:52:35] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-29 05:52:35,657 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-29 05:52:35,660 [INFO] 127.0.0.1 - - [29/Mar/2026 05:52:35] "POST /api/login HTTP/1.1" 200 -
+2026-03-29 05:53:07,945 [INFO] 127.0.0.1 - - [29/Mar/2026 05:53:07] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:53:07,977 [INFO] 127.0.0.1 - - [29/Mar/2026 05:53:07] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:53:35,003 [INFO] 127.0.0.1 - - [29/Mar/2026 05:53:35] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:53:35,056 [INFO] 127.0.0.1 - - [29/Mar/2026 05:53:35] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:54:36,685 [INFO] 127.0.0.1 - - [29/Mar/2026 05:54:36] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-29 05:54:36,713 [INFO] 127.0.0.1 - - [29/Mar/2026 05:54:36] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-29 05:54:40,279 [INFO] 127.0.0.1 - - [29/Mar/2026 05:54:40] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:54:40,283 [INFO] 127.0.0.1 - - [29/Mar/2026 05:54:40] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:54:40,304 [INFO] 127.0.0.1 - - [29/Mar/2026 05:54:40] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:54:40,320 [INFO] 127.0.0.1 - - [29/Mar/2026 05:54:40] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:55:42,346 [INFO] 127.0.0.1 - - [29/Mar/2026 05:55:42] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-29 05:55:42,428 [INFO] 127.0.0.1 - - [29/Mar/2026 05:55:42] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-29 05:55:45,483 [INFO] 127.0.0.1 - - [29/Mar/2026 05:55:45] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:55:45,486 [INFO] 127.0.0.1 - - [29/Mar/2026 05:55:45] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:55:45,516 [INFO] 127.0.0.1 - - [29/Mar/2026 05:55:45] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:55:45,540 [INFO] 127.0.0.1 - - [29/Mar/2026 05:55:45] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 05:56:47,660 [INFO] 127.0.0.1 - - [29/Mar/2026 05:56:47] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-29 05:56:47,695 [INFO] 127.0.0.1 - - [29/Mar/2026 05:56:47] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-29 06:09:21,941 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:21] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-29 06:09:22,003 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:22] "[31m[1mGET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1[0m" 401 -
+2026-03-29 06:09:22,059 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:22] "[31m[1mPOST /api/refresh HTTP/1.1[0m" 401 -
+2026-03-29 06:09:27,117 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:27] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-29 06:09:27,663 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-29 06:09:27,667 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:27] "POST /api/login HTTP/1.1" 200 -
+2026-03-29 06:09:52,151 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:52] "OPTIONS /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:09:52,192 [INFO] 127.0.0.1 - - [29/Mar/2026 06:09:52] "GET /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:10:54,182 [INFO] 127.0.0.1 - - [29/Mar/2026 06:10:54] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-29 06:10:54,241 [INFO] 127.0.0.1 - - [29/Mar/2026 06:10:54] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-29 06:10:57,398 [INFO] 127.0.0.1 - - [29/Mar/2026 06:10:57] "OPTIONS /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:10:57,402 [INFO] 127.0.0.1 - - [29/Mar/2026 06:10:57] "OPTIONS /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:10:57,481 [INFO] 127.0.0.1 - - [29/Mar/2026 06:10:57] "GET /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:10:57,516 [INFO] 127.0.0.1 - - [29/Mar/2026 06:10:57] "GET /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:11:59,737 [INFO] 127.0.0.1 - - [29/Mar/2026 06:11:59] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-29 06:11:59,771 [INFO] 127.0.0.1 - - [29/Mar/2026 06:11:59] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-29 06:12:02,832 [INFO] 127.0.0.1 - - [29/Mar/2026 06:12:02] "OPTIONS /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:12:02,836 [INFO] 127.0.0.1 - - [29/Mar/2026 06:12:02] "OPTIONS /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:12:02,889 [INFO] 127.0.0.1 - - [29/Mar/2026 06:12:02] "GET /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:12:02,932 [INFO] 127.0.0.1 - - [29/Mar/2026 06:12:02] "GET /api/game/questions?limit=1&category=letters_asc HTTP/1.1" 200 -
+2026-03-29 06:12:27,880 [INFO] 127.0.0.1 - - [29/Mar/2026 06:12:27] "[33mOPTIONS /api/leave/balances/emp-1001 HTTP/1.1[0m" 404 -
+2026-03-29 06:12:27,890 [INFO] 127.0.0.1 - - [29/Mar/2026 06:12:27] "[33mOPTIONS /api/requests/employee/emp-1001 HTTP/1.1[0m" 404 -
+2026-03-29 09:51:49,743 [INFO] 127.0.0.1 - - [29/Mar/2026 09:51:49] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-29 09:51:49,841 [INFO] 127.0.0.1 - - [29/Mar/2026 09:51:49] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 401 -
+2026-03-29 09:51:49,878 [INFO] 127.0.0.1 - - [29/Mar/2026 09:51:49] "[31m[1mPOST /api/refresh HTTP/1.1[0m" 401 -
+2026-03-29 09:51:52,678 [INFO] 127.0.0.1 - - [29/Mar/2026 09:51:52] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-29 09:51:53,658 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-29 09:51:53,663 [INFO] 127.0.0.1 - - [29/Mar/2026 09:51:53] "POST /api/login HTTP/1.1" 200 -
+2026-03-30 09:30:43,126 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.219:5000
+2026-03-30 09:30:43,131 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-30 09:30:43,140 [INFO]  * Restarting with stat
+2026-03-30 09:30:46,632 [WARNING]  * Debugger is active!
+2026-03-30 09:30:46,650 [INFO]  * Debugger PIN: 246-401-570
+2026-03-30 09:32:11,658 [INFO] 127.0.0.1 - - [30/Mar/2026 09:32:11] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 09:32:13,176 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-30 09:32:13,231 [INFO] 127.0.0.1 - - [30/Mar/2026 09:32:13] "POST /api/login HTTP/1.1" 200 -
+2026-03-30 09:32:53,131 [INFO]  * Detected change in 'C:\\Users\\tesfalem\\Desktop\\sorting-quz-game\\backend\\app.py', reloading
+2026-03-30 09:32:56,846 [INFO]  * Restarting with stat
+2026-03-30 09:33:20,478 [WARNING]  * Debugger is active!
+2026-03-30 09:33:20,626 [INFO]  * Debugger PIN: 246-401-570
+2026-03-30 09:34:18,040 [INFO] 127.0.0.1 - - [30/Mar/2026 09:34:18] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:34:18,176 [INFO] 127.0.0.1 - - [30/Mar/2026 09:34:18] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:34:30,529 [INFO] 127.0.0.1 - - [30/Mar/2026 09:34:30] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:34:30,550 [INFO] 127.0.0.1 - - [30/Mar/2026 09:34:30] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:35:34,947 [INFO] 127.0.0.1 - - [30/Mar/2026 09:35:34] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:35:34,966 [INFO] 127.0.0.1 - - [30/Mar/2026 09:35:34] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:35:39,573 [INFO] 127.0.0.1 - - [30/Mar/2026 09:35:39] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:35:39,606 [INFO] 127.0.0.1 - - [30/Mar/2026 09:35:39] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:35:39,634 [INFO] 127.0.0.1 - - [30/Mar/2026 09:35:39] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:36:41,164 [INFO] 127.0.0.1 - - [30/Mar/2026 09:36:41] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:36:41,184 [INFO] 127.0.0.1 - - [30/Mar/2026 09:36:41] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:36:44,283 [INFO] 127.0.0.1 - - [30/Mar/2026 09:36:44] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:36:44,290 [INFO] 127.0.0.1 - - [30/Mar/2026 09:36:44] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:36:44,312 [INFO] 127.0.0.1 - - [30/Mar/2026 09:36:44] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:36:44,331 [INFO] 127.0.0.1 - - [30/Mar/2026 09:36:44] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:37:21,928 [INFO] 127.0.0.1 - - [30/Mar/2026 09:37:21] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:37:21,945 [INFO] 127.0.0.1 - - [30/Mar/2026 09:37:21] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:41:20,794 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:20] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:41:21,201 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:21] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:41:51,519 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:51] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:41:51,557 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:51] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:41:54,812 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:54] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:41:54,820 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:54] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:41:54,845 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:54] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:41:54,888 [INFO] 127.0.0.1 - - [30/Mar/2026 09:41:54] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:06,182 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:06] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:42:06,235 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:06] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:42:09,389 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:09] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:09,394 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:09] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:09,462 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:09] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:09,497 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:09] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:14,682 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:14] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:14,758 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:14] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:16,898 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:16] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:19,918 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:19] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:23,114 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:23] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:23,176 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:23] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:23,866 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:23] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:24,635 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:24] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:42:25,408 [INFO] 127.0.0.1 - - [30/Mar/2026 09:42:25] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:43:12,851 [INFO] 127.0.0.1 - - [30/Mar/2026 09:43:12] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:43:12,867 [INFO] 127.0.0.1 - - [30/Mar/2026 09:43:12] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:45:09,933 [INFO] 127.0.0.1 - - [30/Mar/2026 09:45:09] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:45:09,961 [INFO] 127.0.0.1 - - [30/Mar/2026 09:45:09] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:45:10,056 [INFO] 127.0.0.1 - - [30/Mar/2026 09:45:10] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:45:54,056 [INFO] 127.0.0.1 - - [30/Mar/2026 09:45:54] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:45:54,071 [INFO] 127.0.0.1 - - [30/Mar/2026 09:45:54] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:46:25,058 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:25] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:46:25,078 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:25] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:46:28,676 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:28] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:46:28,693 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:28] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:46:28,752 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:28] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:46:28,805 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:28] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:46:59,691 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:59] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:46:59,787 [INFO] 127.0.0.1 - - [30/Mar/2026 09:46:59] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:47:02,858 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:02] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:47:02,861 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:02] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:47:02,910 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:02] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:47:02,972 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:02] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:47:33,785 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:33] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:47:33,810 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:33] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 401 -
+2026-03-30 09:47:33,838 [INFO] 127.0.0.1 - - [30/Mar/2026 09:47:33] "[31m[1mPOST /api/refresh HTTP/1.1[0m" 401 -
+2026-03-30 09:48:42,729 [INFO] 127.0.0.1 - - [30/Mar/2026 09:48:42] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 09:48:43,275 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-30 09:48:43,278 [INFO] 127.0.0.1 - - [30/Mar/2026 09:48:43] "POST /api/login HTTP/1.1" 200 -
+2026-03-30 09:48:59,399 [INFO] 127.0.0.1 - - [30/Mar/2026 09:48:59] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:48:59,417 [INFO] 127.0.0.1 - - [30/Mar/2026 09:48:59] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:49:30,450 [INFO] 127.0.0.1 - - [30/Mar/2026 09:49:30] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:49:30,476 [INFO] 127.0.0.1 - - [30/Mar/2026 09:49:30] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:49:33,602 [INFO] 127.0.0.1 - - [30/Mar/2026 09:49:33] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:49:33,605 [INFO] 127.0.0.1 - - [30/Mar/2026 09:49:33] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:49:33,646 [INFO] 127.0.0.1 - - [30/Mar/2026 09:49:33] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:49:33,677 [INFO] 127.0.0.1 - - [30/Mar/2026 09:49:33] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:50:04,831 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:04] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:50:04,983 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:04] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:50:08,163 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:08] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:50:08,173 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:08] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:50:08,206 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:08] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:50:08,225 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:08] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:50:39,042 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:39] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 09:50:39,061 [INFO] 127.0.0.1 - - [30/Mar/2026 09:50:39] "[31m[1mPOST /api/game/submit HTTP/1.1[0m" 400 -
+2026-03-30 09:52:29,987 [INFO] 127.0.0.1 - - [30/Mar/2026 09:52:29] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:52:30,007 [INFO] 127.0.0.1 - - [30/Mar/2026 09:52:30] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 09:53:15,454 [INFO] 127.0.0.1 - - [30/Mar/2026 09:53:15] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 09:53:15,937 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-30 09:53:15,939 [INFO] 127.0.0.1 - - [30/Mar/2026 09:53:15] "POST /api/login HTTP/1.1" 200 -
+2026-03-30 09:53:48,868 [INFO] 127.0.0.1 - - [30/Mar/2026 09:53:48] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 09:53:48,913 [WARNING] Login attempt for non-existent email from 127.0.0.1
+2026-03-30 09:53:48,928 [INFO] 127.0.0.1 - - [30/Mar/2026 09:53:48] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2026-03-30 09:54:32,237 [INFO] 127.0.0.1 - - [30/Mar/2026 09:54:32] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 09:54:32,722 [WARNING] Failed login for tesfalem.0753402@haramaya.edu.et from 127.0.0.1 — attempt 1
+2026-03-30 09:54:32,782 [INFO] 127.0.0.1 - - [30/Mar/2026 09:54:32] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2026-03-30 10:03:17,104 [INFO]  * Detected change in 'C:\\Users\\tesfalem\\Desktop\\sorting-quz-game\\backend\\app.py', reloading
+2026-03-30 10:03:18,302 [INFO]  * Restarting with stat
+2026-03-30 10:03:30,405 [WARNING]  * Debugger is active!
+2026-03-30 10:03:30,426 [INFO]  * Debugger PIN: 246-401-570
+2026-03-30 10:03:55,283 [INFO]  * Detected change in 'C:\\Users\\tesfalem\\Desktop\\sorting-quz-game\\backend\\app.py', reloading
+2026-03-30 10:03:58,395 [INFO]  * Restarting with stat
+2026-03-30 10:04:22,396 [WARNING]  * Debugger is active!
+2026-03-30 10:04:22,540 [INFO]  * Debugger PIN: 246-401-570
+2026-03-30 10:04:31,942 [INFO]  * Detected change in 'C:\\Users\\tesfalem\\Desktop\\sorting-quz-game\\backend\\app.py', reloading
+2026-03-30 10:04:34,121 [INFO]  * Restarting with stat
+2026-03-30 10:04:48,346 [WARNING]  * Debugger is active!
+2026-03-30 10:04:48,362 [INFO]  * Debugger PIN: 246-401-570
+2026-03-30 10:18:06,401 [INFO] 127.0.0.1 - - [30/Mar/2026 10:18:06] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 10:18:07,652 [INFO] 127.0.0.1 - - [30/Mar/2026 10:18:07] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:19:07,485 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.219:5000
+2026-03-30 10:19:07,486 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-30 10:19:07,494 [INFO]  * Restarting with stat
+2026-03-30 10:19:10,530 [WARNING]  * Debugger is active!
+2026-03-30 10:19:10,541 [INFO]  * Debugger PIN: 246-401-570
+2026-03-30 10:19:29,297 [INFO] 127.0.0.1 - - [30/Mar/2026 10:19:29] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 10:19:29,423 [INFO] 127.0.0.1 - - [30/Mar/2026 10:19:29] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:19:30,810 [INFO] 127.0.0.1 - - [30/Mar/2026 10:19:30] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:19:32,420 [INFO] 127.0.0.1 - - [30/Mar/2026 10:19:32] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:23:37,094 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.219:5000
+2026-03-30 10:23:37,161 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-30 10:23:37,181 [INFO]  * Restarting with stat
+2026-03-30 10:23:47,903 [WARNING]  * Debugger is active!
+2026-03-30 10:23:47,928 [INFO]  * Debugger PIN: 106-685-701
+2026-03-30 10:24:01,569 [INFO] 127.0.0.1 - - [30/Mar/2026 10:24:01] "GET /api/health HTTP/1.1" 200 -
+2026-03-30 10:24:07,043 [INFO] 127.0.0.1 - - [30/Mar/2026 10:24:07] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 10:24:07,580 [INFO] 127.0.0.1 - - [30/Mar/2026 10:24:07] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:24:09,811 [INFO] 127.0.0.1 - - [30/Mar/2026 10:24:09] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:24:27,625 [INFO] 127.0.0.1 - - [30/Mar/2026 10:24:27] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 10:24:28,713 [INFO] 127.0.0.1 - - [30/Mar/2026 10:24:28] "[35m[1mPOST /api/login HTTP/1.1[0m" 500 -
+2026-03-30 10:28:06,655 [INFO] 127.0.0.1 - - [30/Mar/2026 10:28:06] "OPTIONS /api/request-password-reset HTTP/1.1" 200 -
+2026-03-30 10:28:06,862 [INFO] 127.0.0.1 - - [30/Mar/2026 10:28:06] "[35m[1mPOST /api/request-password-reset HTTP/1.1[0m" 500 -
+2026-03-30 10:28:15,195 [INFO] 127.0.0.1 - - [30/Mar/2026 10:28:15] "OPTIONS /api/request-password-reset HTTP/1.1" 200 -
+2026-03-30 10:28:15,350 [INFO] 127.0.0.1 - - [30/Mar/2026 10:28:15] "[35m[1mPOST /api/request-password-reset HTTP/1.1[0m" 500 -
+2026-03-30 10:29:25,769 [INFO] 127.0.0.1 - - [30/Mar/2026 10:29:25] "OPTIONS /api/register HTTP/1.1" 200 -
+2026-03-30 10:29:25,984 [INFO] 127.0.0.1 - - [30/Mar/2026 10:29:25] "[35m[1mPOST /api/register HTTP/1.1[0m" 500 -
+2026-03-30 10:31:52,961 [INFO] 127.0.0.1 - - [30/Mar/2026 10:31:52] "GET /api/health HTTP/1.1" 200 -
+2026-03-30 10:32:51,397 [INFO] 127.0.0.1 - - [30/Mar/2026 10:32:51] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2026-03-30 10:33:12,760 [INFO] 127.0.0.1 - - [30/Mar/2026 10:33:12] "[35m[1mPOST /api/register HTTP/1.1[0m" 500 -
+2026-03-30 10:35:43,520 [INFO] 127.0.0.1 - - [30/Mar/2026 10:35:43] "[35m[1mPOST /api/register HTTP/1.1[0m" 500 -
+2026-03-30 10:36:34,413 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.219:5000
+2026-03-30 10:36:34,417 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-30 10:36:34,428 [INFO]  * Restarting with stat
+2026-03-30 10:36:41,890 [WARNING]  * Debugger is active!
+2026-03-30 10:36:41,910 [INFO]  * Debugger PIN: 106-685-701
+2026-03-30 10:37:13,992 [INFO] 127.0.0.1 - - [30/Mar/2026 10:37:13] "[35m[1mPOST /api/register HTTP/1.1[0m" 500 -
+2026-03-30 10:38:54,192 [INFO] New user registered: test@example.com from 127.0.0.1
+2026-03-30 10:38:54,196 [INFO] 127.0.0.1 - - [30/Mar/2026 10:38:54] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2026-03-30 10:39:28,464 [INFO] 127.0.0.1 - - [30/Mar/2026 10:39:28] "OPTIONS /api/register HTTP/1.1" 200 -
+2026-03-30 10:39:29,140 [INFO] New user registered: tey@gmail.com from 127.0.0.1
+2026-03-30 10:39:29,144 [INFO] 127.0.0.1 - - [30/Mar/2026 10:39:29] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2026-03-30 10:39:56,701 [INFO] 127.0.0.1 - - [30/Mar/2026 10:39:56] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:39:56,916 [INFO] 127.0.0.1 - - [30/Mar/2026 10:39:56] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:40:21,129 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:21] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:40:21,151 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:21] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:40:52,117 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:52] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:40:52,888 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:52] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:40:57,612 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:57] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:40:57,627 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:57] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:40:57,720 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:57] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:40:59,072 [INFO] 127.0.0.1 - - [30/Mar/2026 10:40:59] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:41:29,976 [INFO] 127.0.0.1 - - [30/Mar/2026 10:41:29] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:41:30,007 [INFO] 127.0.0.1 - - [30/Mar/2026 10:41:30] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:41:33,145 [INFO] 127.0.0.1 - - [30/Mar/2026 10:41:33] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:41:33,159 [INFO] 127.0.0.1 - - [30/Mar/2026 10:41:33] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:41:33,256 [INFO] 127.0.0.1 - - [30/Mar/2026 10:41:33] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:41:33,882 [INFO] 127.0.0.1 - - [30/Mar/2026 10:41:33] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:42:03,807 [INFO] 127.0.0.1 - - [30/Mar/2026 10:42:03] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:42:03,845 [INFO] 127.0.0.1 - - [30/Mar/2026 10:42:03] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:42:40,319 [INFO] 127.0.0.1 - - [30/Mar/2026 10:42:40] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:42:41,844 [INFO] 127.0.0.1 - - [30/Mar/2026 10:42:41] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:43:15,892 [INFO] 127.0.0.1 - - [30/Mar/2026 10:43:15] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:43:16,557 [INFO] 127.0.0.1 - - [30/Mar/2026 10:43:16] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:43:46,863 [INFO] 127.0.0.1 - - [30/Mar/2026 10:43:46] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 10:43:48,524 [INFO] Successful login: tesfalem.0753402@haramaya.edu.et from 127.0.0.1
+2026-03-30 10:43:48,528 [INFO] 127.0.0.1 - - [30/Mar/2026 10:43:48] "POST /api/login HTTP/1.1" 200 -
+2026-03-30 10:43:56,347 [INFO] 127.0.0.1 - - [30/Mar/2026 10:43:56] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:43:56,487 [INFO] 127.0.0.1 - - [30/Mar/2026 10:43:56] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:44:29,453 [INFO] 127.0.0.1 - - [30/Mar/2026 10:44:29] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:44:33,481 [INFO] 127.0.0.1 - - [30/Mar/2026 10:44:33] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:44:42,642 [INFO] 127.0.0.1 - - [30/Mar/2026 10:44:42] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:44:42,755 [INFO] 127.0.0.1 - - [30/Mar/2026 10:44:42] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:44:44,751 [INFO] 127.0.0.1 - - [30/Mar/2026 10:44:44] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:44:47,387 [INFO] 127.0.0.1 - - [30/Mar/2026 10:44:47] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:45:20,169 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:20] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:45:20,735 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:20] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:45:25,351 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:25] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:45:25,363 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:25] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:45:25,866 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:25] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:45:26,995 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:26] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:45:57,182 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:57] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:45:57,251 [INFO] 127.0.0.1 - - [30/Mar/2026 10:45:57] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:46:01,314 [INFO] 127.0.0.1 - - [30/Mar/2026 10:46:01] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:46:01,329 [INFO] 127.0.0.1 - - [30/Mar/2026 10:46:01] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:46:01,375 [INFO] 127.0.0.1 - - [30/Mar/2026 10:46:01] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:46:01,895 [INFO] 127.0.0.1 - - [30/Mar/2026 10:46:01] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:46:34,508 [INFO] 127.0.0.1 - - [30/Mar/2026 10:46:34] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:46:36,735 [INFO] 127.0.0.1 - - [30/Mar/2026 10:46:36] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:48:55,805 [INFO] 127.0.0.1 - - [30/Mar/2026 10:48:55] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:48:55,825 [INFO] 127.0.0.1 - - [30/Mar/2026 10:48:55] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:49:26,442 [INFO] 127.0.0.1 - - [30/Mar/2026 10:49:26] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:49:26,477 [INFO] 127.0.0.1 - - [30/Mar/2026 10:49:26] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:49:29,660 [INFO] 127.0.0.1 - - [30/Mar/2026 10:49:29] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:49:29,669 [INFO] 127.0.0.1 - - [30/Mar/2026 10:49:29] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:49:29,727 [INFO] 127.0.0.1 - - [30/Mar/2026 10:49:29] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:49:30,033 [INFO] 127.0.0.1 - - [30/Mar/2026 10:49:30] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:50:00,374 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:00] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:50:00,409 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:00] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:50:03,543 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:03] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:50:03,545 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:03] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:50:03,662 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:03] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:50:04,001 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:04] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:50:34,231 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:34] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:50:34,281 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:34] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:50:59,756 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:59] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:50:59,787 [INFO] 127.0.0.1 - - [30/Mar/2026 10:50:59] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:51:30,374 [INFO] 127.0.0.1 - - [30/Mar/2026 10:51:30] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:51:30,421 [INFO] 127.0.0.1 - - [30/Mar/2026 10:51:30] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:51:33,580 [INFO] 127.0.0.1 - - [30/Mar/2026 10:51:33] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:51:33,621 [INFO] 127.0.0.1 - - [30/Mar/2026 10:51:33] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:51:33,633 [INFO] 127.0.0.1 - - [30/Mar/2026 10:51:33] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:51:33,814 [INFO] 127.0.0.1 - - [30/Mar/2026 10:51:33] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:04,270 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:04] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:52:04,308 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:04] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:52:07,415 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:07] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:07,439 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:07] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:07,474 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:07] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:07,541 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:07] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:26,218 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:26] "GET /api/health HTTP/1.1" 200 -
+2026-03-30 10:52:38,266 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:38] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:52:38,369 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:38] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:52:42,322 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:42] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:42,663 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:42] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:43,031 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:43] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:43,347 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:43] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:52:56,892 [INFO] 127.0.0.1 - - [30/Mar/2026 10:52:56] "GET /api/leaderboard HTTP/1.1" 200 -
+2026-03-30 10:53:13,939 [INFO] 127.0.0.1 - - [30/Mar/2026 10:53:13] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:53:14,820 [INFO] 127.0.0.1 - - [30/Mar/2026 10:53:14] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:53:30,189 [INFO] 127.0.0.1 - - [30/Mar/2026 10:53:30] "[31m[1mGET /api/game/questions?limit=1 HTTP/1.1[0m" 401 -
+2026-03-30 10:54:39,606 [INFO] 127.0.0.1 - - [30/Mar/2026 10:54:39] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:54:40,682 [INFO] 127.0.0.1 - - [30/Mar/2026 10:54:40] "[31m[1mGET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1[0m" 401 -
+2026-03-30 10:54:41,336 [INFO] 127.0.0.1 - - [30/Mar/2026 10:54:41] "[31m[1mPOST /api/refresh HTTP/1.1[0m" 401 -
+2026-03-30 10:54:49,406 [INFO] 127.0.0.1 - - [30/Mar/2026 10:54:49] "OPTIONS /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:54:50,563 [INFO] 127.0.0.1 - - [30/Mar/2026 10:54:50] "GET /api/game/questions?limit=1&category=bubble_sort HTTP/1.1" 200 -
+2026-03-30 10:56:50,514 [INFO] 127.0.0.1 - - [30/Mar/2026 10:56:50] "OPTIONS /api/login HTTP/1.1" 200 -
+2026-03-30 10:56:51,446 [INFO] Successful login: tey@gmail.com from 127.0.0.1
+2026-03-30 10:56:51,454 [INFO] 127.0.0.1 - - [30/Mar/2026 10:56:51] "POST /api/login HTTP/1.1" 200 -
+2026-03-30 10:56:59,251 [INFO] 127.0.0.1 - - [30/Mar/2026 10:56:59] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:56:59,279 [INFO] 127.0.0.1 - - [30/Mar/2026 10:56:59] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:57:30,107 [INFO] 127.0.0.1 - - [30/Mar/2026 10:57:30] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:57:30,173 [INFO] 127.0.0.1 - - [30/Mar/2026 10:57:30] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:57:33,254 [INFO] 127.0.0.1 - - [30/Mar/2026 10:57:33] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:57:33,255 [INFO] 127.0.0.1 - - [30/Mar/2026 10:57:33] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:57:33,304 [INFO] 127.0.0.1 - - [30/Mar/2026 10:57:33] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:57:33,380 [INFO] 127.0.0.1 - - [30/Mar/2026 10:57:33] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:58:04,068 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:04] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:58:04,256 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:04] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:58:07,362 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:07] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:58:07,384 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:07] "OPTIONS /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:58:07,412 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:07] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:58:07,468 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:07] "GET /api/game/questions?limit=1&category=numbers_asc HTTP/1.1" 200 -
+2026-03-30 10:58:38,403 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:38] "OPTIONS /api/game/submit HTTP/1.1" 200 -
+2026-03-30 10:58:39,106 [INFO] 127.0.0.1 - - [30/Mar/2026 10:58:39] "POST /api/game/submit HTTP/1.1" 200 -
+2026-03-30 11:32:05,769 [INFO]  * Detected change in 'C:\\Users\\tesfalem\\Desktop\\sorting-quz-game\\backend\\app.py', reloading
+2026-03-30 11:32:06,835 [INFO]  * Restarting with stat

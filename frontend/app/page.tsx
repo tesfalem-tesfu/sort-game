@@ -2,20 +2,21 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link"; // ← Added only this import for navigation
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
 
-  const [num1, setNum1] = useState(0);
-  const [num2, setNum2] = useState(0);
+  const [num1, setNum1] = useState(1);
+  const [num2, setNum2] = useState(1);
+  const [mounted, setMounted] = useState(false);
   const [answer, setAnswer] = useState("");
   const [error, setError] = useState("");
 
-  // Generate random numbers ONLY on client after mount
   useEffect(() => {
     setNum1(Math.floor(Math.random() * 20) + 1);
     setNum2(Math.floor(Math.random() * 20) + 1);
+    setMounted(true);
   }, []);
 
   const correctAnswer = num1 + num2;
@@ -30,27 +31,29 @@ export default function Home() {
     }
   };
 
-  // Show loading until numbers are generated
-  if (num1 === 0 || num2 === 0) {
+  if (!mounted) {
     return (
-      <div className="min-vh-100 d-flex align-items-center justify-content-center bg-gradient-to-br from-indigo-950 via-purple-950 to-fuchsia-950">
-        <div className="spinner-border text-light" style={{ width: "4rem", height: "4rem" }} />
+      <div className="min-vh-100 d-flex align-items-center justify-content-center">
+        <div className="spinner-border text-light" style={{ width: "3rem", height: "3rem" }} />
       </div>
     );
   }
 
   return (
-    <div 
-      className="min-vh-100 d-flex align-items-center justify-content-center text-white"
+    <div
+      className="page-content"
       style={{
+        minHeight: "100vh",
         backgroundImage: "url('/images/home.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
-    >
-      <div className="glass-card p-5 p-md-5 rounded-4 shadow-2xl text-center" style={{ maxWidth: "600px", width: "90%", background: "rgba(30, 30, 60, 0.75)" }}>
+    >      <div className="glass-card p-5 text-center" style={{ maxWidth: "560px", width: "90%" }}>
         <h1 className="display-4 fw-bold mb-4 text-gradient">Enjoy Sorting Daily</h1>
 
         <p className="lead mb-5">
