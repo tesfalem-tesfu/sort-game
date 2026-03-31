@@ -49,7 +49,7 @@ MYSQL_HOST     = os.getenv("MYSQL_HOST", "localhost")
 MYSQL_PORT     = os.getenv("MYSQL_PORT", "3306")
 MYSQL_DB       = os.getenv("MYSQL_DB", "sorting_quiz")
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL", f"mysql+pymysql://root:@localhost/sorting_quiz")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL", "sqlite:///quiz.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # ── JWT — short-lived access + long-lived refresh ─────────────────────────────
