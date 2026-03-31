@@ -43,13 +43,24 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # ── Database ──────────────────────────────────────────────────────────────────
-MYSQL_USER     = os.getenv("MYSQL_USER", "root")
-MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "")
-MYSQL_HOST     = os.getenv("MYSQL_HOST", "localhost")
-MYSQL_PORT     = os.getenv("MYSQL_PORT", "3306")
-MYSQL_DB       = os.getenv("MYSQL_DB", "sorting_quiz")
+# Render provides DATABASE_URL for PostgreSQL — use it if available, else fall back to MySQL locally
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL", "sqlite:///quiz.db")
+if DATABASE_URL:
+    # Render gives postgres:// but SQLAlchemy needs postgresql://
+    if DATABASE_URL.startswith("postgres://"):
+        DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
+else:
+    # Local MySQL (XAMPP)
+    MYSQL_USER     = os.getenv("MYSQL_USER", "root")
+    MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "")
+    MYSQL_HOST     = os.getenv("MYSQL_HOST", "localhost")
+    MYSQL_PORT     = os.getenv("MYSQL_PORT", "3306")
+    MYSQL_DB       = os.getenv("MYSQL_DB", "sorting_quiz")
+    app.config["SQLALCHEMY_DATABASE_URI"] = (
+        f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}"
+    )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # ── JWT — short-lived access + long-lived refresh ─────────────────────────────
@@ -63,10 +74,12 @@ app.config["JWT_ACCESS_COOKIE_NAME"]          = "access_token"
 app.config["JWT_REFRESH_COOKIE_NAME"]         = "refresh_token"
 app.config["JWT_COOKIE_CSRF_PROTECT"]         = False   # Enable in production
 
+FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "")
+
 CORS(app, resources={r"/api/*": {"origins": [
     "http://localhost:3000", "http://localhost:3001", "http://localhost:3002",
     "http://127.0.0.1:3000", "http://127.0.0.1:3001", "http://127.0.0.1:3002",
-    "https://*.onrender.com"
+    FRONTEND_ORIGIN,
 ]}}, supports_credentials=True)
 
 db  = SQLAlchemy(app)
@@ -168,7 +181,7 @@ def security_headers(response):
         "style-src 'self' 'unsafe-inline'; "
         "img-src 'self' data:; "
         "font-src 'self' https://fonts.gstatic.com; "
-        "connect-src 'self' http://localhost:*;"
+        "connect-src 'self' http://localhost:* https://*.onrender.com;"
     )
     response.headers["Permissions-Policy"] = "geolocation=(), microphone=(), camera=()"
     return response
@@ -323,11 +336,10 @@ def submit():
     correct     = user_answer == q["answer"]
 
     # Update user stats
-    user_id = get_jwt_identity()
-    user = User.query.get(user_id)
-    if user:
-        user.total_games += 1
-        if correct and score > user.high_score:
+    email = get_jwt_identity()
+    user = User.query.filter_by(email=email).first()
+    if user and correct:
+        if score > user.high_score:
             user.high_score = score
         db.session.commit()
 
@@ -470,8 +482,8 @@ def _generate_answer(category: str, items: list) -> dict | None:
 @app.route("/api/profile", methods=["GET", "PUT"])
 @jwt_required()
 def profile():
-    user_id = get_jwt_identity()
-    user = User.query.get(user_id)
+    user_email = get_jwt_identity()
+    user = User.query.filter_by(email=user_email).first()
     
     if not user:
         return jsonify({"error": "User not found"}), 404
@@ -580,8 +592,8 @@ def reset_password():
 @jwt_required()
 @limiter.limit("3 per minute")
 def send_verification():
-    user_id = get_jwt_identity()
-    user = User.query.get(user_id)
+    user_email = get_jwt_identity()
+    user = User.query.filter_by(email=user_email).first()
     
     if not user:
         return jsonify({"error": "User not found"}), 404

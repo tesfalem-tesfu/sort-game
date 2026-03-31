@@ -136,7 +136,6 @@ function Game() {
   const algoInfo     = ALGO_LABELS[mode] || { name: "Sorting", icon: "🎯", color: "#6366f1" };
   const algoAction   = ALGO_ACTIONS[mode] || ALGO_ACTIONS["numbers_asc"];
 
-  const [questions, setQuestions]         = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex]   = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [items, setItems]                 = useState<string[]>([]);
@@ -439,8 +438,6 @@ function Game() {
           <span>{Array.from({ length: 3 }).map((_, i) => <span key={i}>{i < lives ? "❤️" : "🖤"}</span>)}</span>
           <button className="btn btn-sm btn-outline-secondary" onClick={() => setSoundEnabled(!soundEnabled)}>{soundEnabled ? "🔊" : "🔇"}</button>
           <button className="btn btn-sm btn-outline-light" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>{theme === "dark" ? "☀️" : "🌙"}</button>
-          <button className="btn btn-sm btn-outline-info" onClick={() => router.push("/leaderboard")}>🏆</button>
-          <button className="btn btn-sm btn-outline-warning" onClick={() => router.push("/profile")}>👤</button>
           <button className="btn btn-sm btn-outline-danger" onClick={logout}>Logout</button>
         </div>
       </header>
