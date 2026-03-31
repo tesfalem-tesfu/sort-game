@@ -380,3 +380,18 @@
 2026-03-30 11:32:06,835 [INFO]  * Restarting with stat
 2026-03-30 11:32:10,032 [WARNING]  * Debugger is active!
 2026-03-30 11:32:10,045 [INFO]  * Debugger PIN: 106-685-701
+2026-03-31 10:07:03,125 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.48.219:5000
+2026-03-31 10:07:03,132 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-31 10:07:03,140 [INFO]  * Restarting with stat
+2026-03-31 10:07:06,422 [WARNING]  * Debugger is active!
+2026-03-31 10:07:06,457 [INFO]  * Debugger PIN: 246-401-570
+2026-03-31 10:07:09,714 [INFO] 127.0.0.1 - - [31/Mar/2026 10:07:09] "OPTIONS /api/register HTTP/1.1" 200 -
+2026-03-31 10:07:10,886 [INFO] 127.0.0.1 - - [31/Mar/2026 10:07:10] "OPTIONS /api/register HTTP/1.1" 200 -
+2026-03-31 10:08:30,572 [INFO] 127.0.0.1 - - [31/Mar/2026 10:08:30] "OPTIONS /api/register HTTP/1.1" 200 -
+2026-03-31 10:10:41,125 [INFO]  * Detected change in 'C:\\Users\\tesfalem\\Desktop\\sorting-quz-game\\backend\\app.py', reloading
+2026-03-31 10:10:43,308 [INFO]  * Restarting with stat
+2026-03-31 10:10:52,549 [WARNING]  * Debugger is active!
+2026-03-31 10:10:52,568 [INFO]  * Debugger PIN: 246-401-570
